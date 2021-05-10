@@ -14,7 +14,6 @@ namespace MicroCommerce.ProductCatalog
         {
             services.AddCorrelationToken();
             services.AddCors();
-            // регистрируем реализацию как зависимость в контейнере IoC
             services.AddTransient<IProductCatalog, ProductCatalogImpl>();
             services.AddLogging(builder => builder.AddConsole());
             services.AddRequestLogging();
@@ -37,7 +36,6 @@ namespace MicroCommerce.ProductCatalog
                     .AllowAnyHeader();
             });
 
-            // привязываем реализацию к конечной точке
             app.UseWebApiEndpoint<IProductCatalog>();
         }
     }
