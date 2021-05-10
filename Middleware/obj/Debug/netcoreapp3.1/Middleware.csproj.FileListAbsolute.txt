@@ -1,9 +1,0 @@
-D:\University\5k\Lab1\Middleware\bin\Debug\netcoreapp3.1\Middleware.deps.json
-D:\University\5k\Lab1\Middleware\bin\Debug\netcoreapp3.1\Middleware.dll
-D:\University\5k\Lab1\Middleware\bin\Debug\netcoreapp3.1\Middleware.pdb
-D:\University\5k\Lab1\Middleware\obj\Debug\netcoreapp3.1\Middleware.csprojAssemblyReference.cache
-D:\University\5k\Lab1\Middleware\obj\Debug\netcoreapp3.1\Middleware.AssemblyInfoInputs.cache
-D:\University\5k\Lab1\Middleware\obj\Debug\netcoreapp3.1\Middleware.AssemblyInfo.cs
-D:\University\5k\Lab1\Middleware\obj\Debug\netcoreapp3.1\Middleware.csproj.CoreCompileInputs.cache
-D:\University\5k\Lab1\Middleware\obj\Debug\netcoreapp3.1\Middleware.dll
-D:\University\5k\Lab1\Middleware\obj\Debug\netcoreapp3.1\Middleware.pdb
