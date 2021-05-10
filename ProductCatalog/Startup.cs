@@ -35,7 +35,7 @@ namespace MicroCommerce.ProductCatalog
                     .AllowAnyMethod()
                     .AllowAnyHeader();
             });
-
+//test
             app.UseWebApiEndpoint<IProductCatalog>();
         }
     }
