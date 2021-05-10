@@ -1,0 +1,2165 @@
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ git config --global user.email antohazarich@gmail.com
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ git config --global user.name "ZarAO"
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ ssh-keygen -t rsa -C "antohazarich@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/antoh/.ssh/id_rsa):
+Created directory '/c/Users/antoh/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/antoh/.ssh/id_rsa
+Your public key has been saved in /c/Users/antoh/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:0MuMHuIwK/Y2g+0cRZYXYWq63axGQFXlrWSH3oD4THs antohazarich@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|    ...=o.       |
+|   .  =.+ o      |
+|  .  B.+.* o     |
+|   .= ===.=      |
+|  o.o.o+SE .     |
+|   =++o..        |
+|..+oo..o         |
+|.oo=...          |
+|  o++.           |
++----[SHA256]-----+
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ notepad ~/.ssh/id_rsa.pub
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ notepad ~/.ssh/id_rsa.pub
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/antoh/.ssh/id_rsa':
+Hi ZarAO! You've successfully authenticated, but GitHub does not provide shell access.
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ d:
+bash: d:: command not found
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ cd D:\University\5k\Lab1
+bash: cd: D:University5kLab1: No such file or directory
+
+antoh@DESKTOP-7G24S9R MINGW64 ~
+$ cd D:/University/5k/Lab1
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ commit -a -m '2 commit'
+bash: commit: command not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git commit -a -m '2 commit'
+[master 2130b72] 2 commit
+ 2 files changed, 2 deletions(-)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .vs/Lab1/v16/.suo
+        modified:   ProductCatalog/Startup.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git commit -a -m '3 commit'
+[master c1d92be] 3 commit
+ 2 files changed, 2 deletions(-)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log
+commit c1d92be200dbed2e95659518f0e9010d3d083f27 (HEAD -> master)
+Author: <U+0096>ZarAO <antohazarich@gmail.com>
+Date:   Mon May 10 04:42:13 2021 +0300
+
+    3 commit
+
+commit 2130b72da3a94fe14a43ac178c40127c26ce21cc
+Author: <U+0096>ZarAO <antohazarich@gmail.com>
+Date:   Mon May 10 04:41:16 2021 +0300
+
+    2 commit
+
+commit e41ee752ab66eebdb5196a633a9a4180f34aa1e4
+Author: <U+0096>ZarAO <antohazarich@gmail.com>
+Date:   Mon May 10 04:31:36 2021 +0300
+
+    'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git branch "2' commit" 2130b72da3a94fe14a43ac178c40127c26ce21cc
+fatal: '2' commit' is not a valid branch name.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git branch "_2 commit" 2130b72da3a94fe14a43ac178c40127c26ce21cc
+fatal: '_2 commit' is not a valid branch name.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git branch _2_commit 2130b72da3a94fe14a43ac178c40127c26ce21cc
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ tree
+bash: tree: command not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git tree
+git: 'tree' is not a git command. See 'git --help'.
+
+The most similar command is
+        mktree
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ ~/java$ tree.com //a //f
+bash: /c/Users/antoh/java$: No such file or directory
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ cmd //c tree //a //f
+Folder PATH listing for volume Storage
+Volume serial number is 09EC-1BA2
+D:.
+|   Lab1.sln
+|
++---ActivityLogger
+|   |   ActivityLogger.cs
+|   |   ActivityLogger.csproj
+|   |   appsettings.Development.json
+|   |   appsettings.json
+|   |   Program.cs
+|   |   Scheduler.cs
+|   |   Startup.cs
+|   |
+|   +---bin
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |               ActivityLogger.deps.json
+|   |               ActivityLogger.dll
+|   |               ActivityLogger.exe
+|   |               ActivityLogger.pdb
+|   |               ActivityLogger.runtimeconfig.dev.json
+|   |               ActivityLogger.runtimeconfig.json
+|   |               appsettings.Development.json
+|   |               appsettings.json
+|   |               Interfaces.dll
+|   |               Interfaces.pdb
+|   |               Microsoft.AspNetCore.Server.Kestrel.Https.dll
+|   |               Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+|   |               Microsoft.DotNet.PlatformAbstractions.dll
+|   |               Microsoft.Extensions.DependencyModel.dll
+|   |               Middleware.dll
+|   |               Middleware.pdb
+|   |               Newtonsoft.Json.dll
+|   |               Shed.CoreKit.WebApi.Abstractions.dll
+|   |               Shed.CoreKit.WebApi.dll
+|   |
+|   +---obj
+|   |   |   ActivityLogger.csproj.nuget.dgspec.json
+|   |   |   ActivityLogger.csproj.nuget.g.props
+|   |   |   ActivityLogger.csproj.nuget.g.targets
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |           |   .NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+|   |           |   ActivityLogger.AssemblyInfo.cs
+|   |           |   ActivityLogger.AssemblyInfoInputs.cache
+|   |           |   ActivityLogger.assets.cache
+|   |           |   ActivityLogger.csproj.CopyComplete
+|   |           |   ActivityLogger.csproj.CoreCompileInputs.cache
+|   |           |   ActivityLogger.csproj.FileListAbsolute.txt
+|   |           |   ActivityLogger.csprojAssemblyReference.cache
+|   |           |   ActivityLogger.dll
+|   |           |   ActivityLogger.genruntimeconfig.cache
+|   |           |   ActivityLogger.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   ActivityLogger.pdb
+|   |           |   ActivityLogger.RazorTargetAssemblyInfo.cache
+|   |           |   apphost.exe
+|   |           |
+|   |           \---staticwebassets
+|   |                   ActivityLogger.StaticWebAssets.Manifest.cache
+|   |                   ActivityLogger.StaticWebAssets.xml
+|   |
+|   \---Properties
+|           launchSettings.json
+|
++---Interfaces
+|   |   IActivityLogger.cs
+|   |   Interfaces.csproj
+|   |   IProductCatalog.cs
+|   |   IShoppingCart.cs
+|   |
+|   +---bin
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |               Interfaces.deps.json
+|   |               Interfaces.dll
+|   |               Interfaces.pdb
+|   |
+|   +---Models
+|   |       Cart.cs
+|   |       CartEvent.cs
+|   |       CartEventTypeEnum.cs
+|   |       EventBase.cs
+|   |       LogEvent.cs
+|   |       Order.cs
+|   |       Product.cs
+|   |
+|   \---obj
+|       |   Interfaces.csproj.nuget.dgspec.json
+|       |   Interfaces.csproj.nuget.g.props
+|       |   Interfaces.csproj.nuget.g.targets
+|       |   project.assets.json
+|       |   project.nuget.cache
+|       |
+|       \---Debug
+|           \---netcoreapp3.1
+|                   .NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+|                   Interfaces.AssemblyInfo.cs
+|                   Interfaces.AssemblyInfoInputs.cache
+|                   Interfaces.assets.cache
+|                   Interfaces.csproj.CoreCompileInputs.cache
+|                   Interfaces.csproj.FileListAbsolute.txt
+|                   Interfaces.csprojAssemblyReference.cache
+|                   Interfaces.dll
+|                   Interfaces.pdb
+|
++---Lab1
+|   |   appsettings.Development.json
+|   |   appsettings.json
+|   |   Lab1.csproj
+|   |   Program.cs
+|   |   Startup.cs
+|   |
+|   +---bin
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |               appsettings.Development.json
+|   |               appsettings.json
+|   |               Interfaces.dll
+|   |               Interfaces.pdb
+|   |               Lab1.deps.json
+|   |               Lab1.dll
+|   |               Lab1.exe
+|   |               Lab1.pdb
+|   |               Lab1.runtimeconfig.dev.json
+|   |               Lab1.runtimeconfig.json
+|   |               Microsoft.AspNetCore.Server.Kestrel.Https.dll
+|   |               Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+|   |               Microsoft.DotNet.PlatformAbstractions.dll
+|   |               Microsoft.Extensions.DependencyModel.dll
+|   |               Middleware.dll
+|   |               Middleware.pdb
+|   |               Newtonsoft.Json.dll
+|   |               Shed.CoreKit.WebApi.Abstractions.dll
+|   |               Shed.CoreKit.WebApi.dll
+|   |
+|   +---obj
+|   |   |   Lab1.csproj.nuget.dgspec.json
+|   |   |   Lab1.csproj.nuget.g.props
+|   |   |   Lab1.csproj.nuget.g.targets
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |           |   .NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+|   |           |   apphost.exe
+|   |           |   Lab1.AssemblyInfo.cs
+|   |           |   Lab1.AssemblyInfoInputs.cache
+|   |           |   Lab1.assets.cache
+|   |           |   Lab1.csproj.CopyComplete
+|   |           |   Lab1.csproj.CoreCompileInputs.cache
+|   |           |   Lab1.csproj.FileListAbsolute.txt
+|   |           |   Lab1.csprojAssemblyReference.cache
+|   |           |   Lab1.dll
+|   |           |   Lab1.genruntimeconfig.cache
+|   |           |   Lab1.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   Lab1.pdb
+|   |           |   Lab1.RazorTargetAssemblyInfo.cache
+|   |           |
+|   |           \---staticwebassets
+|   |                   Lab1.StaticWebAssets.Manifest.cache
+|   |                   Lab1.StaticWebAssets.xml
+|   |
+|   +---Properties
+|   |       launchSettings.json
+|   |
+|   \---wwwroot
+|           index.html
+|           index.js
+|
++---Middleware
+|   |   Middleware.csproj
+|   |   RequestLoggingExt.cs
+|   |
+|   +---bin
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |               Middleware.deps.json
+|   |               Middleware.dll
+|   |               Middleware.pdb
+|   |
+|   \---obj
+|       |   Middleware.csproj.nuget.dgspec.json
+|       |   Middleware.csproj.nuget.g.props
+|       |   Middleware.csproj.nuget.g.targets
+|       |   project.assets.json
+|       |   project.nuget.cache
+|       |
+|       \---Debug
+|           \---netcoreapp3.1
+|                   .NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+|                   Middleware.AssemblyInfo.cs
+|                   Middleware.AssemblyInfoInputs.cache
+|                   Middleware.assets.cache
+|                   Middleware.csproj.CoreCompileInputs.cache
+|                   Middleware.csproj.FileListAbsolute.txt
+|                   Middleware.csprojAssemblyReference.cache
+|                   Middleware.dll
+|                   Middleware.pdb
+|
++---ProductCatalog
+|   |   appsettings.Development.json
+|   |   appsettings.json
+|   |   ProductCatalog.cs
+|   |   ProductCatalog.csproj
+|   |   Program.cs
+|   |   Startup.cs
+|   |
+|   +---bin
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |               appsettings.Development.json
+|   |               appsettings.json
+|   |               Interfaces.dll
+|   |               Interfaces.pdb
+|   |               Microsoft.AspNetCore.Server.Kestrel.Https.dll
+|   |               Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+|   |               Microsoft.DotNet.PlatformAbstractions.dll
+|   |               Microsoft.Extensions.DependencyModel.dll
+|   |               Middleware.dll
+|   |               Middleware.pdb
+|   |               Newtonsoft.Json.dll
+|   |               ProductCatalog.deps.json
+|   |               ProductCatalog.dll
+|   |               ProductCatalog.exe
+|   |               ProductCatalog.pdb
+|   |               ProductCatalog.runtimeconfig.dev.json
+|   |               ProductCatalog.runtimeconfig.json
+|   |               Shed.CoreKit.WebApi.Abstractions.dll
+|   |               Shed.CoreKit.WebApi.dll
+|   |
+|   +---obj
+|   |   |   ProductCatalog.csproj.nuget.dgspec.json
+|   |   |   ProductCatalog.csproj.nuget.g.props
+|   |   |   ProductCatalog.csproj.nuget.g.targets
+|   |   |   project.assets.json
+|   |   |   project.nuget.cache
+|   |   |
+|   |   \---Debug
+|   |       \---netcoreapp3.1
+|   |           |   .NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+|   |           |   apphost.exe
+|   |           |   ProductCatalog.AssemblyInfo.cs
+|   |           |   ProductCatalog.AssemblyInfoInputs.cache
+|   |           |   ProductCatalog.assets.cache
+|   |           |   ProductCatalog.csproj.CopyComplete
+|   |           |   ProductCatalog.csproj.CoreCompileInputs.cache
+|   |           |   ProductCatalog.csproj.FileListAbsolute.txt
+|   |           |   ProductCatalog.csprojAssemblyReference.cache
+|   |           |   ProductCatalog.dll
+|   |           |   ProductCatalog.genruntimeconfig.cache
+|   |           |   ProductCatalog.MvcApplicationPartsAssemblyInfo.cache
+|   |           |   ProductCatalog.pdb
+|   |           |   ProductCatalog.RazorTargetAssemblyInfo.cache
+|   |           |
+|   |           \---staticwebassets
+|   |                   ProductCatalog.StaticWebAssets.Manifest.cache
+|   |                   ProductCatalog.StaticWebAssets.xml
+|   |
+|   \---Properties
+|           launchSettings.json
+|
+\---ShoppingCart
+    |   appsettings.Development.json
+    |   appsettings.json
+    |   Program.cs
+    |   ShoppingCart.cs
+    |   ShoppingCart.csproj
+    |   Startup.cs
+    |
+    +---bin
+    |   \---Debug
+    |       \---netcoreapp3.1
+    |               appsettings.Development.json
+    |               appsettings.json
+    |               Interfaces.dll
+    |               Interfaces.pdb
+    |               Microsoft.AspNetCore.Server.Kestrel.Https.dll
+    |               Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+    |               Microsoft.DotNet.PlatformAbstractions.dll
+    |               Microsoft.Extensions.DependencyModel.dll
+    |               Middleware.dll
+    |               Middleware.pdb
+    |               Newtonsoft.Json.dll
+    |               Shed.CoreKit.WebApi.Abstractions.dll
+    |               Shed.CoreKit.WebApi.dll
+    |               ShoppingCart.deps.json
+    |               ShoppingCart.dll
+    |               ShoppingCart.exe
+    |               ShoppingCart.pdb
+    |               ShoppingCart.runtimeconfig.dev.json
+    |               ShoppingCart.runtimeconfig.json
+    |
+    +---obj
+    |   |   project.assets.json
+    |   |   project.nuget.cache
+    |   |   ShoppingCart.csproj.nuget.dgspec.json
+    |   |   ShoppingCart.csproj.nuget.g.props
+    |   |   ShoppingCart.csproj.nuget.g.targets
+    |   |
+    |   \---Debug
+    |       \---netcoreapp3.1
+    |           |   .NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+    |           |   apphost.exe
+    |           |   ShoppingCart.AssemblyInfo.cs
+    |           |   ShoppingCart.AssemblyInfoInputs.cache
+    |           |   ShoppingCart.assets.cache
+    |           |   ShoppingCart.csproj.CopyComplete
+    |           |   ShoppingCart.csproj.CoreCompileInputs.cache
+    |           |   ShoppingCart.csproj.FileListAbsolute.txt
+    |           |   ShoppingCart.csprojAssemblyReference.cache
+    |           |   ShoppingCart.dll
+    |           |   ShoppingCart.genruntimeconfig.cache
+    |           |   ShoppingCart.MvcApplicationPartsAssemblyInfo.cache
+    |           |   ShoppingCart.pdb
+    |           |   ShoppingCart.RazorTargetAssemblyInfo.cache
+    |           |
+    |           \---staticwebassets
+    |                   ShoppingCart.StaticWebAssets.Manifest.cache
+    |                   ShoppingCart.StaticWebAssets.xml
+    |
+    \---Properties
+            launchSettings.json
+
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git cmd //c tree //a //f
+git: 'cmd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ d //c tree //a //f
+bash: d: command not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ d //c tree //a //f
+bash: d: command not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git read-tree
+warning: read-tree: emptying the index with no arguments is deprecated; use --empty
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --pretty=oneline --abbrev-commit --all --decorate
+* c1d92be (HEAD -> master) 3 commit
+* 2130b72 (_2_commit) 2 commit
+* e41ee75 'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph
+* commit c1d92be200dbed2e95659518f0e9010d3d083f27 (HEAD -> master)
+| Author: <U+0096>ZarAO <antohazarich@gmail.com>
+| Date:   Mon May 10 04:42:13 2021 +0300
+|
+|     3 commit
+|
+* commit 2130b72da3a94fe14a43ac178c40127c26ce21cc (_2_commit)
+| Author: <U+0096>ZarAO <antohazarich@gmail.com>
+| Date:   Mon May 10 04:41:16 2021 +0300
+|
+|     2 commit
+|
+* commit e41ee752ab66eebdb5196a633a9a4180f34aa1e4
+  Author: <U+0096>ZarAO <antohazarich@gmail.com>
+  Date:   Mon May 10 04:31:36 2021 +0300
+
+      'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log
+commit c1d92be200dbed2e95659518f0e9010d3d083f27 (HEAD -> master)
+Author: <U+0096>ZarAO <antohazarich@gmail.com>
+Date:   Mon May 10 04:42:13 2021 +0300
+
+    3 commit
+
+commit 2130b72da3a94fe14a43ac178c40127c26ce21cc (_2_commit)
+Author: <U+0096>ZarAO <antohazarich@gmail.com>
+Date:   Mon May 10 04:41:16 2021 +0300
+
+    2 commit
+
+commit e41ee752ab66eebdb5196a633a9a4180f34aa1e4
+Author: <U+0096>ZarAO <antohazarich@gmail.com>
+Date:   Mon May 10 04:31:36 2021 +0300
+
+    'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --pretty=oneline --abbrev-commit --all --decorate -n
+error: -n requires an argument
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --pretty=oneline --abbrev-commit --all --decorate --n
+error: ambiguous option: n (could be --no-decorate-refs-exclude or --no-decorate)
+usage: git log [<options>] [<revision-range>] [[--] <path>...]
+   or: git show [<options>] <object>...
+
+    -q, --quiet           suppress diff output
+    --source              show source
+    --use-mailmap         use mail map file
+    --mailmap             alias of --use-mailmap
+    --decorate-refs <pattern>
+                          only decorate refs that match <pattern>
+    --decorate-refs-exclude <pattern>
+                          do not decorate refs that match <pattern>
+    --decorate[=...]      decorate options
+    -L <range:file>       trace the evolution of line range <start>,<end> or function :<funcname> in <file>
+
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ alias gitlog='git log --graph --pretty=oneline --abbrev-commit --all --decorate'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ gitlog -n 5
+* c1d92be (HEAD -> master) 3 commit
+* 2130b72 (_2_commit) 2 commit
+* e41ee75 'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --color-words --color --source --decorate --all
+* commit c1d92be200dbed2e95659518f0e9010d3d083f27       refs/heads/master (HEAD -> master)
+| Author: <U+0096>ZarAO <antohazarich@gmail.com>
+| Date:   Mon May 10 04:42:13 2021 +0300
+|
+|     3 commit
+|
+* commit 2130b72da3a94fe14a43ac178c40127c26ce21cc       refs/heads/_2_commit (_2_commit)
+| Author: <U+0096>ZarAO <antohazarich@gmail.com>
+| Date:   Mon May 10 04:41:16 2021 +0300
+|
+|     2 commit
+|
+* commit e41ee752ab66eebdb5196a633a9a4180f34aa1e4       refs/heads/_2_commit
+  Author: <U+0096>ZarAO <antohazarich@gmail.com>
+  Date:   Mon May 10 04:31:36 2021 +0300
+
+      'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+* c1d92be - (22 minutes ago) 3 commit - <U+0096>ZarAO (HEAD -> master)
+* 2130b72 - (23 minutes ago) 2 commit - <U+0096>ZarAO (_2_commit)
+* e41ee75 - (33 minutes ago) 'Lab1_2' - <U+0096>ZarAO
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+* c1d92be - Mon, 10 May 2021 04:42:13 +0300 (22 minutes ago) (HEAD -> master)
+|           3 commit - <U+0096>ZarAO
+* 2130b72 - Mon, 10 May 2021 04:41:16 +0300 (23 minutes ago) (_2_commit)
+|           2 commit - <U+0096>ZarAO
+* e41ee75 - Mon, 10 May 2021 04:31:36 +0300 (33 minutes ago)
+            'Lab1_2' - <U+0096>ZarAO
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --graph --simplify-by-decoration
+* commit c1d92be200dbed2e95659518f0e9010d3d083f27 (HEAD -> master)
+| Author: <U+0096>ZarAO <antohazarich@gmail.com>
+| Date:   Mon May 10 04:42:13 2021 +0300
+|
+|     3 commit
+|
+* commit 2130b72da3a94fe14a43ac178c40127c26ce21cc (_2_commit)
+| Author: <U+0096>ZarAO <antohazarich@gmail.com>
+| Date:   Mon May 10 04:41:16 2021 +0300
+|
+|     2 commit
+|
+* commit e41ee752ab66eebdb5196a633a9a4180f34aa1e4
+  Author: <U+0096>ZarAO <antohazarich@gmail.com>
+  Date:   Mon May 10 04:31:36 2021 +0300
+
+      'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git diff master _2_commit
+diff --git a/.vs/Lab1/v16/.suo b/.vs/Lab1/v16/.suo
+index cfde6a8..d80abde 100644
+Binary files a/.vs/Lab1/v16/.suo and b/.vs/Lab1/v16/.suo differ
+diff --git a/ProductCatalog/Startup.cs b/ProductCatalog/Startup.cs
+index babbd61..694bd39 100644
+--- a/ProductCatalog/Startup.cs
++++ b/ProductCatalog/Startup.cs
+@@ -14,6 +14,7 @@ namespace MicroCommerce.ProductCatalog
+         {
+             services.AddCorrelationToken();
+             services.AddCors();
++            // <F0><E5><E3><E8><F1><F2><F0><E8><F0><F3><E5><EC> <F0><E5><E0><EB><E8><E7><E0><F6><E8><FE> <EA><E0><EA> <E7><E0><E2><E8><F1><E8><EC><EE><F1><F2><FC> <E2> <EA><EE><ED><F2><E5><E9><ED><E5><F0><E5> IoC
+             services.AddTransient<IProductCatalog, ProductCatalogImpl>();
+             services.AddLogging(builder => builder.AddConsole());
+             services.AddRequestLogging();
+@@ -36,6 +37,7 @@ namespace MicroCommerce.ProductCatalog
+                     .AllowAnyHeader();
+             });
+
++            // <EF><F0><E8><E2><FF><E7><FB><E2><E0><E5><EC> <F0><E5><E0><EB><E8><E7><E0><F6><E8><FE> <EA> <EA><EE><ED><E5><F7><ED><EE><E9> <F2><EE><F7><EA><E5>
+             app.UseWebApiEndpoint<IProductCatalog>();
+         }
+     }
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git diff --name-only master _2_commit
+.vs/Lab1/v16/.suo
+ProductCatalog/Startup.cs
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git remote add pb https://github.com/ZarAO/R_LAB1_2
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push https://github.com/ZarAO/R_LAB1_2 master
+remote: Repository not found.
+fatal: repository 'https://github.com/ZarAO/R_LAB1_2/' not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git pull https://github.com/ZarAO/R_LAB1_2
+remote: Repository not found.
+fatal: repository 'https://github.com/ZarAO/R_LAB1_2/' not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push -f https://github.com/ZarAO/R_LAB1_2 master
+remote: Repository not found.
+fatal: repository 'https://github.com/ZarAO/R_LAB1_2/' not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git remote add origin https://github.com/ZarAO/R_LAB1_2.git
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push -u origin master
+Enumerating objects: 211, done.
+Counting objects: 100% (211/211), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (160/160), done.
+Writing objects: 100% (211/211), 672.56 KiB | 6.17 MiB/s, done.
+Total 211 (delta 70), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (70/70), done.
+To https://github.com/ZarAO/R_LAB1_2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push -u origin _2_commit
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for '_2_commit' on GitHub by visiting:
+remote:      https://github.com/ZarAO/R_LAB1_2/pull/new/_2_commit
+remote:
+To https://github.com/ZarAO/R_LAB1_2.git
+ * [new branch]      _2_commit -> _2_commit
+Branch '_2_commit' set up to track remote branch '_2_commit' from 'origin'.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    .vs/Lab1/DesignTimeBuild/.dtbcache.v2
+        deleted:    .vs/Lab1/v16/.suo
+        deleted:    ActivityLogger/ActivityLogger.cs
+        deleted:    ActivityLogger/ActivityLogger.csproj
+        deleted:    ActivityLogger/Program.cs
+        deleted:    ActivityLogger/Properties/launchSettings.json
+        deleted:    ActivityLogger/Scheduler.cs
+        deleted:    ActivityLogger/Startup.cs
+        deleted:    ActivityLogger/appsettings.Development.json
+        deleted:    ActivityLogger/appsettings.json
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.deps.json
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.exe
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.pdb
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.runtimeconfig.dev.json
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.runtimeconfig.json
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Interfaces.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Middleware.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Middleware.pdb
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        deleted:    ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.json
+        deleted:    ActivityLogger/obj/ActivityLogger.csproj.nuget.dgspec.json
+        deleted:    ActivityLogger/obj/ActivityLogger.csproj.nuget.g.props
+        deleted:    ActivityLogger/obj/ActivityLogger.csproj.nuget.g.targets
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.AssemblyInfo.cs
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.AssemblyInfoInputs.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.MvcApplicationPartsAssemblyInfo.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.RazorTargetAssemblyInfo.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.assets.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.CopyComplete
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.CoreCompileInputs.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.FileListAbsolute.txt
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csprojAssemblyReference.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.dll
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.genruntimeconfig.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.pdb
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/apphost.exe
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/staticwebassets/ActivityLogger.StaticWebAssets.Manifest.cache
+        deleted:    ActivityLogger/obj/Debug/netcoreapp3.1/staticwebassets/ActivityLogger.StaticWebAssets.xml
+        deleted:    ActivityLogger/obj/project.assets.json
+        deleted:    ActivityLogger/obj/project.nuget.cache
+        deleted:    Interfaces/IActivityLogger.cs
+        deleted:    Interfaces/IProductCatalog.cs
+        deleted:    Interfaces/IShoppingCart.cs
+        deleted:    Interfaces/Interfaces.csproj
+        deleted:    Interfaces/Models/Cart.cs
+        deleted:    Interfaces/Models/CartEvent.cs
+        deleted:    Interfaces/Models/CartEventTypeEnum.cs
+        deleted:    Interfaces/Models/EventBase.cs
+        deleted:    Interfaces/Models/LogEvent.cs
+        deleted:    Interfaces/Models/Order.cs
+        deleted:    Interfaces/Models/Product.cs
+        deleted:    Interfaces/bin/Debug/netcoreapp3.1/Interfaces.deps.json
+        deleted:    Interfaces/bin/Debug/netcoreapp3.1/Interfaces.dll
+        deleted:    Interfaces/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.AssemblyInfo.cs
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.AssemblyInfoInputs.cache
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.assets.cache
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csproj.CoreCompileInputs.cache
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csproj.FileListAbsolute.txt
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csprojAssemblyReference.cache
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.dll
+        deleted:    Interfaces/obj/Debug/netcoreapp3.1/Interfaces.pdb
+        deleted:    Interfaces/obj/Interfaces.csproj.nuget.dgspec.json
+        deleted:    Interfaces/obj/Interfaces.csproj.nuget.g.props
+        deleted:    Interfaces/obj/Interfaces.csproj.nuget.g.targets
+        deleted:    Interfaces/obj/project.assets.json
+        deleted:    Interfaces/obj/project.nuget.cache
+        deleted:    Lab1.sln
+        deleted:    Lab1/Lab1.csproj
+        deleted:    Lab1/Program.cs
+        deleted:    Lab1/Properties/launchSettings.json
+        deleted:    Lab1/Startup.cs
+        deleted:    Lab1/appsettings.Development.json
+        deleted:    Lab1/appsettings.json
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Interfaces.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Lab1.deps.json
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Lab1.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Lab1.exe
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Lab1.pdb
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Lab1.runtimeconfig.dev.json
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Lab1.runtimeconfig.json
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Middleware.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Middleware.pdb
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        deleted:    Lab1/bin/Debug/netcoreapp3.1/appsettings.json
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.AssemblyInfo.cs
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.AssemblyInfoInputs.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.MvcApplicationPartsAssemblyInfo.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.RazorTargetAssemblyInfo.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.assets.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.CopyComplete
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.CoreCompileInputs.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.FileListAbsolute.txt
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.csprojAssemblyReference.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.dll
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.genruntimeconfig.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/Lab1.pdb
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/apphost.exe
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/staticwebassets/Lab1.StaticWebAssets.Manifest.cache
+        deleted:    Lab1/obj/Debug/netcoreapp3.1/staticwebassets/Lab1.StaticWebAssets.xml
+        deleted:    Lab1/obj/Lab1.csproj.nuget.dgspec.json
+        deleted:    Lab1/obj/Lab1.csproj.nuget.g.props
+        deleted:    Lab1/obj/Lab1.csproj.nuget.g.targets
+        deleted:    Lab1/obj/project.assets.json
+        deleted:    Lab1/obj/project.nuget.cache
+        deleted:    Lab1/wwwroot/index.html
+        deleted:    Lab1/wwwroot/index.js
+        deleted:    Middleware/Middleware.csproj
+        deleted:    Middleware/RequestLoggingExt.cs
+        deleted:    Middleware/bin/Debug/netcoreapp3.1/Middleware.deps.json
+        deleted:    Middleware/bin/Debug/netcoreapp3.1/Middleware.dll
+        deleted:    Middleware/bin/Debug/netcoreapp3.1/Middleware.pdb
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.AssemblyInfo.cs
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.AssemblyInfoInputs.cache
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.assets.cache
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.csproj.CoreCompileInputs.cache
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.csproj.FileListAbsolute.txt
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.csprojAssemblyReference.cache
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.dll
+        deleted:    Middleware/obj/Debug/netcoreapp3.1/Middleware.pdb
+        deleted:    Middleware/obj/Middleware.csproj.nuget.dgspec.json
+        deleted:    Middleware/obj/Middleware.csproj.nuget.g.props
+        deleted:    Middleware/obj/Middleware.csproj.nuget.g.targets
+        deleted:    Middleware/obj/project.assets.json
+        deleted:    Middleware/obj/project.nuget.cache
+        deleted:    ProductCatalog/ProductCatalog.cs
+        deleted:    ProductCatalog/ProductCatalog.csproj
+        deleted:    ProductCatalog/Program.cs
+        deleted:    ProductCatalog/Properties/launchSettings.json
+        deleted:    ProductCatalog/Startup.cs
+        deleted:    ProductCatalog/appsettings.Development.json
+        deleted:    ProductCatalog/appsettings.json
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Interfaces.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Middleware.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Middleware.pdb
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.deps.json
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.exe
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.pdb
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.runtimeconfig.dev.json
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.runtimeconfig.json
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        deleted:    ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.json
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.AssemblyInfo.cs
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.AssemblyInfoInputs.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.MvcApplicationPartsAssemblyInfo.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.RazorTargetAssemblyInfo.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.assets.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.CopyComplete
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.CoreCompileInputs.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.FileListAbsolute.txt
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csprojAssemblyReference.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.dll
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.genruntimeconfig.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.pdb
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/apphost.exe
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/staticwebassets/ProductCatalog.StaticWebAssets.Manifest.cache
+        deleted:    ProductCatalog/obj/Debug/netcoreapp3.1/staticwebassets/ProductCatalog.StaticWebAssets.xml
+        deleted:    ProductCatalog/obj/ProductCatalog.csproj.nuget.dgspec.json
+        deleted:    ProductCatalog/obj/ProductCatalog.csproj.nuget.g.props
+        deleted:    ProductCatalog/obj/ProductCatalog.csproj.nuget.g.targets
+        deleted:    ProductCatalog/obj/project.assets.json
+        deleted:    ProductCatalog/obj/project.nuget.cache
+        deleted:    ShoppingCart/Program.cs
+        deleted:    ShoppingCart/Properties/launchSettings.json
+        deleted:    ShoppingCart/ShoppingCart.cs
+        deleted:    ShoppingCart/ShoppingCart.csproj
+        deleted:    ShoppingCart/Startup.cs
+        deleted:    ShoppingCart/appsettings.Development.json
+        deleted:    ShoppingCart/appsettings.json
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Interfaces.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Middleware.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Middleware.pdb
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.deps.json
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.dll
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.exe
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.pdb
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.runtimeconfig.dev.json
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.runtimeconfig.json
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        deleted:    ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.json
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.AssemblyInfo.cs
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.AssemblyInfoInputs.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.MvcApplicationPartsAssemblyInfo.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.RazorTargetAssemblyInfo.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.assets.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.CopyComplete
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.CoreCompileInputs.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.FileListAbsolute.txt
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csprojAssemblyReference.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.dll
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.genruntimeconfig.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.pdb
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/apphost.exe
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/staticwebassets/ShoppingCart.StaticWebAssets.Manifest.cache
+        deleted:    ShoppingCart/obj/Debug/netcoreapp3.1/staticwebassets/ShoppingCart.StaticWebAssets.xml
+        deleted:    ShoppingCart/obj/ShoppingCart.csproj.nuget.dgspec.json
+        deleted:    ShoppingCart/obj/ShoppingCart.csproj.nuget.g.props
+        deleted:    ShoppingCart/obj/ShoppingCart.csproj.nuget.g.targets
+        deleted:    ShoppingCart/obj/project.assets.json
+        deleted:    ShoppingCart/obj/project.nuget.cache
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        ActivityLogger/
+        Interfaces/
+        Lab1.sln
+        Lab1/
+        Middleware/
+        ProductCatalog/
+        ShoppingCart/
+
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git commit -a -m '4 commit'
+[master 158b106] 4 commit
+ 240 files changed, 44476 deletions(-)
+ delete mode 100644 .vs/Lab1/DesignTimeBuild/.dtbcache.v2
+ delete mode 100644 .vs/Lab1/v16/.suo
+ delete mode 100644 ActivityLogger/ActivityLogger.cs
+ delete mode 100644 ActivityLogger/ActivityLogger.csproj
+ delete mode 100644 ActivityLogger/Program.cs
+ delete mode 100644 ActivityLogger/Properties/launchSettings.json
+ delete mode 100644 ActivityLogger/Scheduler.cs
+ delete mode 100644 ActivityLogger/Startup.cs
+ delete mode 100644 ActivityLogger/appsettings.Development.json
+ delete mode 100644 ActivityLogger/appsettings.json
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.deps.json
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.exe
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.pdb
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.runtimeconfig.dev.json
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.runtimeconfig.json
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Interfaces.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Interfaces.pdb
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Middleware.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Middleware.pdb
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.Development.json
+ delete mode 100644 ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.json
+ delete mode 100644 ActivityLogger/obj/ActivityLogger.csproj.nuget.dgspec.json
+ delete mode 100644 ActivityLogger/obj/ActivityLogger.csproj.nuget.g.props
+ delete mode 100644 ActivityLogger/obj/ActivityLogger.csproj.nuget.g.targets
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.AssemblyInfo.cs
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.AssemblyInfoInputs.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.MvcApplicationPartsAssemblyInfo.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.RazorTargetAssemblyInfo.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.assets.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.CopyComplete
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.CoreCompileInputs.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.FileListAbsolute.txt
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csprojAssemblyReference.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.dll
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.genruntimeconfig.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.pdb
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/apphost.exe
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/staticwebassets/ActivityLogger.StaticWebAssets.Manifest.cache
+ delete mode 100644 ActivityLogger/obj/Debug/netcoreapp3.1/staticwebassets/ActivityLogger.StaticWebAssets.xml
+ delete mode 100644 ActivityLogger/obj/project.assets.json
+ delete mode 100644 ActivityLogger/obj/project.nuget.cache
+ delete mode 100644 Interfaces/IActivityLogger.cs
+ delete mode 100644 Interfaces/IProductCatalog.cs
+ delete mode 100644 Interfaces/IShoppingCart.cs
+ delete mode 100644 Interfaces/Interfaces.csproj
+ delete mode 100644 Interfaces/Models/Cart.cs
+ delete mode 100644 Interfaces/Models/CartEvent.cs
+ delete mode 100644 Interfaces/Models/CartEventTypeEnum.cs
+ delete mode 100644 Interfaces/Models/EventBase.cs
+ delete mode 100644 Interfaces/Models/LogEvent.cs
+ delete mode 100644 Interfaces/Models/Order.cs
+ delete mode 100644 Interfaces/Models/Product.cs
+ delete mode 100644 Interfaces/bin/Debug/netcoreapp3.1/Interfaces.deps.json
+ delete mode 100644 Interfaces/bin/Debug/netcoreapp3.1/Interfaces.dll
+ delete mode 100644 Interfaces/bin/Debug/netcoreapp3.1/Interfaces.pdb
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.AssemblyInfo.cs
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.AssemblyInfoInputs.cache
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.assets.cache
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csproj.CoreCompileInputs.cache
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csproj.FileListAbsolute.txt
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csprojAssemblyReference.cache
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.dll
+ delete mode 100644 Interfaces/obj/Debug/netcoreapp3.1/Interfaces.pdb
+ delete mode 100644 Interfaces/obj/Interfaces.csproj.nuget.dgspec.json
+ delete mode 100644 Interfaces/obj/Interfaces.csproj.nuget.g.props
+ delete mode 100644 Interfaces/obj/Interfaces.csproj.nuget.g.targets
+ delete mode 100644 Interfaces/obj/project.assets.json
+ delete mode 100644 Interfaces/obj/project.nuget.cache
+ delete mode 100644 Lab1.sln
+ delete mode 100644 Lab1/Lab1.csproj
+ delete mode 100644 Lab1/Program.cs
+ delete mode 100644 Lab1/Properties/launchSettings.json
+ delete mode 100644 Lab1/Startup.cs
+ delete mode 100644 Lab1/appsettings.Development.json
+ delete mode 100644 Lab1/appsettings.json
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Interfaces.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Interfaces.pdb
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Lab1.deps.json
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Lab1.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Lab1.exe
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Lab1.pdb
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Lab1.runtimeconfig.dev.json
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Lab1.runtimeconfig.json
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Middleware.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Middleware.pdb
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/appsettings.Development.json
+ delete mode 100644 Lab1/bin/Debug/netcoreapp3.1/appsettings.json
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.AssemblyInfo.cs
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.AssemblyInfoInputs.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.MvcApplicationPartsAssemblyInfo.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.RazorTargetAssemblyInfo.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.assets.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.CopyComplete
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.CoreCompileInputs.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.FileListAbsolute.txt
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.csprojAssemblyReference.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.dll
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.genruntimeconfig.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/Lab1.pdb
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/apphost.exe
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/staticwebassets/Lab1.StaticWebAssets.Manifest.cache
+ delete mode 100644 Lab1/obj/Debug/netcoreapp3.1/staticwebassets/Lab1.StaticWebAssets.xml
+ delete mode 100644 Lab1/obj/Lab1.csproj.nuget.dgspec.json
+ delete mode 100644 Lab1/obj/Lab1.csproj.nuget.g.props
+ delete mode 100644 Lab1/obj/Lab1.csproj.nuget.g.targets
+ delete mode 100644 Lab1/obj/project.assets.json
+ delete mode 100644 Lab1/obj/project.nuget.cache
+ delete mode 100644 Lab1/wwwroot/index.html
+ delete mode 100644 Lab1/wwwroot/index.js
+ delete mode 100644 Middleware/Middleware.csproj
+ delete mode 100644 Middleware/RequestLoggingExt.cs
+ delete mode 100644 Middleware/bin/Debug/netcoreapp3.1/Middleware.deps.json
+ delete mode 100644 Middleware/bin/Debug/netcoreapp3.1/Middleware.dll
+ delete mode 100644 Middleware/bin/Debug/netcoreapp3.1/Middleware.pdb
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.AssemblyInfo.cs
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.AssemblyInfoInputs.cache
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.assets.cache
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.csproj.CoreCompileInputs.cache
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.csproj.FileListAbsolute.txt
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.csprojAssemblyReference.cache
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.dll
+ delete mode 100644 Middleware/obj/Debug/netcoreapp3.1/Middleware.pdb
+ delete mode 100644 Middleware/obj/Middleware.csproj.nuget.dgspec.json
+ delete mode 100644 Middleware/obj/Middleware.csproj.nuget.g.props
+ delete mode 100644 Middleware/obj/Middleware.csproj.nuget.g.targets
+ delete mode 100644 Middleware/obj/project.assets.json
+ delete mode 100644 Middleware/obj/project.nuget.cache
+ delete mode 100644 ProductCatalog/ProductCatalog.cs
+ delete mode 100644 ProductCatalog/ProductCatalog.csproj
+ delete mode 100644 ProductCatalog/Program.cs
+ delete mode 100644 ProductCatalog/Properties/launchSettings.json
+ delete mode 100644 ProductCatalog/Startup.cs
+ delete mode 100644 ProductCatalog/appsettings.Development.json
+ delete mode 100644 ProductCatalog/appsettings.json
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Interfaces.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Interfaces.pdb
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Middleware.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Middleware.pdb
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.deps.json
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.exe
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.pdb
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.runtimeconfig.dev.json
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.runtimeconfig.json
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.Development.json
+ delete mode 100644 ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.json
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.AssemblyInfo.cs
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.AssemblyInfoInputs.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.MvcApplicationPartsAssemblyInfo.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.RazorTargetAssemblyInfo.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.assets.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.CopyComplete
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.CoreCompileInputs.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.FileListAbsolute.txt
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csprojAssemblyReference.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.dll
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.genruntimeconfig.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.pdb
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/apphost.exe
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/staticwebassets/ProductCatalog.StaticWebAssets.Manifest.cache
+ delete mode 100644 ProductCatalog/obj/Debug/netcoreapp3.1/staticwebassets/ProductCatalog.StaticWebAssets.xml
+ delete mode 100644 ProductCatalog/obj/ProductCatalog.csproj.nuget.dgspec.json
+ delete mode 100644 ProductCatalog/obj/ProductCatalog.csproj.nuget.g.props
+ delete mode 100644 ProductCatalog/obj/ProductCatalog.csproj.nuget.g.targets
+ delete mode 100644 ProductCatalog/obj/project.assets.json
+ delete mode 100644 ProductCatalog/obj/project.nuget.cache
+ delete mode 100644 ShoppingCart/Program.cs
+ delete mode 100644 ShoppingCart/Properties/launchSettings.json
+ delete mode 100644 ShoppingCart/ShoppingCart.cs
+ delete mode 100644 ShoppingCart/ShoppingCart.csproj
+ delete mode 100644 ShoppingCart/Startup.cs
+ delete mode 100644 ShoppingCart/appsettings.Development.json
+ delete mode 100644 ShoppingCart/appsettings.json
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Interfaces.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Interfaces.pdb
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Middleware.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Middleware.pdb
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.deps.json
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.dll
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.exe
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.pdb
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.runtimeconfig.dev.json
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.runtimeconfig.json
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.Development.json
+ delete mode 100644 ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.json
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.AssemblyInfo.cs
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.AssemblyInfoInputs.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.MvcApplicationPartsAssemblyInfo.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.RazorTargetAssemblyInfo.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.assets.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.CopyComplete
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.CoreCompileInputs.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.FileListAbsolute.txt
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csprojAssemblyReference.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.dll
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.genruntimeconfig.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.pdb
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/apphost.exe
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/staticwebassets/ShoppingCart.StaticWebAssets.Manifest.cache
+ delete mode 100644 ShoppingCart/obj/Debug/netcoreapp3.1/staticwebassets/ShoppingCart.StaticWebAssets.xml
+ delete mode 100644 ShoppingCart/obj/ShoppingCart.csproj.nuget.dgspec.json
+ delete mode 100644 ShoppingCart/obj/ShoppingCart.csproj.nuget.g.props
+ delete mode 100644 ShoppingCart/obj/ShoppingCart.csproj.nuget.g.targets
+ delete mode 100644 ShoppingCart/obj/project.assets.json
+ delete mode 100644 ShoppingCart/obj/project.nuget.cache
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        ActivityLogger/
+        Interfaces/
+        Lab1.sln
+        Lab1/
+        Middleware/
+        ProductCatalog/
+        ShoppingCart/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git ls-remote --heads origin
+2130b72da3a94fe14a43ac178c40127c26ce21cc        refs/heads/_2_commit
+262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a        refs/heads/master
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git diff master origin/master
+diff --git a/.vs/Lab1/DesignTimeBuild/.dtbcache.v2 b/.vs/Lab1/DesignTimeBuild/.dtbcache.v2
+new file mode 100644
+index 0000000..f63a280
+Binary files /dev/null and b/.vs/Lab1/DesignTimeBuild/.dtbcache.v2 differ
+diff --git a/.vs/Lab1/v16/.suo b/.vs/Lab1/v16/.suo
+new file mode 100644
+index 0000000..cfde6a8
+Binary files /dev/null and b/.vs/Lab1/v16/.suo differ
+diff --git a/ActivityLogger/ActivityLogger.cs b/ActivityLogger/ActivityLogger.cs
+new file mode 100644
+index 0000000..843ec2a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.cs
+@@ -0,0 +1,50 @@
++﻿using MicroCommerce;
++using MicroCommerce.Models;
++using System.Collections.Generic;
++using System.Linq;
++
++namespace ActivityLogger
++{
++    public class ActivityLoggerImpl : IActivityLogger
++    {
++        private IShoppingCart _shoppingCart;
++
++        private static long timestamp;
++        private static List<LogEvent> _log = new List<LogEvent>();
++
++        public ActivityLoggerImpl(IShoppingCart shoppingCart)
++        {
++            _shoppingCart = shoppingCart;
++        }
++
++        public IEnumerable<LogEvent> Get(long timestamp)
++        {
++            return _log.Where(i => i.Timestamp > timestamp);
++        }
++
++        public void ReceiveEvents()
++        {
++            var cartEvents = _shoppingCart.GetCartEvents(timestamp);
++
++            if (cartEvents.Count() > 0)
++            {
++                timestamp = cartEvents.Max(c => c.Timestamp);
++                _log.AddRange(cartEvents.Select(e => new LogEvent
++                {
++                    Description = $"{GetEventDesc(e.Type)}: '{e.Order.Product.Name} ({e.Order.Quantity})'"
++                }));
++            }
++        }
++
++        private string GetEventDesc(CartEventTypeEnum type)
++        {
++            switch (type)
++            {
++                case CartEventTypeEnum.OrderAdded: return "order added";
++                case CartEventTypeEnum.OrderChanged: return "order changed";
++                case CartEventTypeEnum.OrderRemoved: return "order removed";
++                default: return "unknown operation";
++            }
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/ActivityLogger/ActivityLogger.csproj b/ActivityLogger/ActivityLogger.csproj
+new file mode 100644
+index 0000000..3a3a72a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.csproj
+@@ -0,0 +1,16 @@
++<Project Sdk="Microsoft.NET.Sdk.Web">
++
+      0 [sig] bash 1223! sigpacket::process: Suppressing signal 18 to win32 process (pid 14036)
+new file mode 100644
+index 0000000..f63a280
+Binary files /dev/null and b/.vs/Lab1/DesignTimeBuild/.dtbcache.v2 differ
+diff --git a/.vs/Lab1/v16/.suo b/.vs/Lab1/v16/.suo
+new file mode 100644
+index 0000000..cfde6a8
+Binary files /dev/null and b/.vs/Lab1/v16/.suo differ
+diff --git a/ActivityLogger/ActivityLogger.cs b/ActivityLogger/ActivityLogger.cs
+new file mode 100644
+index 0000000..843ec2a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.cs
+@@ -0,0 +1,50 @@
++﻿using MicroCommerce;
++using MicroCommerce.Models;
++using System.Collections.Generic;
++using System.Linq;
++
++namespace ActivityLogger
++{
++    public class ActivityLoggerImpl : IActivityLogger
++    {
++        private IShoppingCart _shoppingCart;
++
++        private static long timestamp;
++        private static List<LogEvent> _log = new List<LogEvent>();
++
++        public ActivityLoggerImpl(IShoppingCart shoppingCart)
++        {
++            _shoppingCart = shoppingCart;
++        }
++
++        public IEnumerable<LogEvent> Get(long timestamp)
++        {
++            return _log.Where(i => i.Timestamp > timestamp);
++        }
++
++        public void ReceiveEvents()
++        {
++            var cartEvents = _shoppingCart.GetCartEvents(timestamp);
++
++            if (cartEvents.Count() > 0)
++            {
++                timestamp = cartEvents.Max(c => c.Timestamp);
++                _log.AddRange(cartEvents.Select(e => new LogEvent
++                {
++                    Description = $"{GetEventDesc(e.Type)}: '{e.Order.Product.Name} ({e.Order.Quantity})'"
++                }));
++            }
++        }
++
++        private string GetEventDesc(CartEventTypeEnum type)
++        {
++            switch (type)
++            {
++                case CartEventTypeEnum.OrderAdded: return "order added";
++                case CartEventTypeEnum.OrderChanged: return "order changed";
++                case CartEventTypeEnum.OrderRemoved: return "order removed";
++                default: return "unknown operation";
++            }
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/ActivityLogger/ActivityLogger.csproj b/ActivityLogger/ActivityLogger.csproj
+new file mode 100644
+index 0000000..3a3a72a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.csproj
+@@ -0,0 +1,16 @@
++<Project Sdk="Microsoft.NET.Sdk.Web">
++
+ 867485 [sig] bash 1223! sigpacket::process: Suppressing signal 18 to win32 process (pid 14036)
+new file mode 100644
+index 0000000..f63a280
+Binary files /dev/null and b/.vs/Lab1/DesignTimeBuild/.dtbcache.v2 differ
+diff --git a/.vs/Lab1/v16/.suo b/.vs/Lab1/v16/.suo
+new file mode 100644
+index 0000000..cfde6a8
+Binary files /dev/null and b/.vs/Lab1/v16/.suo differ
+diff --git a/ActivityLogger/ActivityLogger.cs b/ActivityLogger/ActivityLogger.cs
+new file mode 100644
+index 0000000..843ec2a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.cs
+@@ -0,0 +1,50 @@
++﻿using MicroCommerce;
++using MicroCommerce.Models;
++using System.Collections.Generic;
++using System.Linq;
++
++namespace ActivityLogger
++{
++    public class ActivityLoggerImpl : IActivityLogger
++    {
++        private IShoppingCart _shoppingCart;
++
++        private static long timestamp;
++        private static List<LogEvent> _log = new List<LogEvent>();
++
++        public ActivityLoggerImpl(IShoppingCart shoppingCart)
++        {
++            _shoppingCart = shoppingCart;
++        }
++
++        public IEnumerable<LogEvent> Get(long timestamp)
++        {
++            return _log.Where(i => i.Timestamp > timestamp);
++        }
++
++        public void ReceiveEvents()
++        {
++            var cartEvents = _shoppingCart.GetCartEvents(timestamp);
++
++            if (cartEvents.Count() > 0)
++            {
++                timestamp = cartEvents.Max(c => c.Timestamp);
++                _log.AddRange(cartEvents.Select(e => new LogEvent
++                {
++                    Description = $"{GetEventDesc(e.Type)}: '{e.Order.Product.Name} ({e.Order.Quantity})'"
++                }));
++            }
++        }
++
++        private string GetEventDesc(CartEventTypeEnum type)
++        {
++            switch (type)
++            {
++                case CartEventTypeEnum.OrderAdded: return "order added";
++                case CartEventTypeEnum.OrderChanged: return "order changed";
++                case CartEventTypeEnum.OrderRemoved: return "order removed";
++                default: return "unknown operation";
++            }
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/ActivityLogger/ActivityLogger.csproj b/ActivityLogger/ActivityLogger.csproj
+new file mode 100644
+index 0000000..3a3a72a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.csproj
+@@ -0,0 +1,16 @@
++<Project Sdk="Microsoft.NET.Sdk.Web">
++
+1696489 [sig] bash 1223! sigpacket::process: Suppressing signal 18 to win32 process (pid 14036)
+new file mode 100644
+index 0000000..f63a280
+Binary files /dev/null and b/.vs/Lab1/DesignTimeBuild/.dtbcache.v2 differ
+diff --git a/.vs/Lab1/v16/.suo b/.vs/Lab1/v16/.suo
+new file mode 100644
+index 0000000..cfde6a8
+Binary files /dev/null and b/.vs/Lab1/v16/.suo differ
+diff --git a/ActivityLogger/ActivityLogger.cs b/ActivityLogger/ActivityLogger.cs
+new file mode 100644
+index 0000000..843ec2a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.cs
+@@ -0,0 +1,50 @@
++﻿using MicroCommerce;
++using MicroCommerce.Models;
++using System.Collections.Generic;
++using System.Linq;
++
++namespace ActivityLogger
++{
++    public class ActivityLoggerImpl : IActivityLogger
++    {
++        private IShoppingCart _shoppingCart;
++
++        private static long timestamp;
++        private static List<LogEvent> _log = new List<LogEvent>();
++
++        public ActivityLoggerImpl(IShoppingCart shoppingCart)
++        {
++            _shoppingCart = shoppingCart;
++        }
++
++        public IEnumerable<LogEvent> Get(long timestamp)
++        {
++            return _log.Where(i => i.Timestamp > timestamp);
++        }
++
++        public void ReceiveEvents()
++        {
++            var cartEvents = _shoppingCart.GetCartEvents(timestamp);
++
++            if (cartEvents.Count() > 0)
++            {
++                timestamp = cartEvents.Max(c => c.Timestamp);
++                _log.AddRange(cartEvents.Select(e => new LogEvent
++                {
++                    Description = $"{GetEventDesc(e.Type)}: '{e.Order.Product.Name} ({e.Order.Quantity})'"
++                }));
++            }
++        }
++
++        private string GetEventDesc(CartEventTypeEnum type)
++        {
++            switch (type)
++            {
++                case CartEventTypeEnum.OrderAdded: return "order added";
++                case CartEventTypeEnum.OrderChanged: return "order changed";
++                case CartEventTypeEnum.OrderRemoved: return "order removed";
++                default: return "unknown operation";
++            }
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/ActivityLogger/ActivityLogger.csproj b/ActivityLogger/ActivityLogger.csproj
+new file mode 100644
+index 0000000..3a3a72a
+--- /dev/null
++++ b/ActivityLogger/ActivityLogger.csproj
+@@ -0,0 +1,16 @@
++<Project Sdk="Microsoft.NET.Sdk.Web">
++
++  <PropertyGroup>
+:
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+gi
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push -u origin master
+To https://github.com/ZarAO/R_LAB1_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ZarAO/R_LAB1_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        ActivityLogger/
+        Interfaces/
+        Lab1.sln
+        Lab1/
+        Middleware/
+        ProductCatalog/
+        ShoppingCart/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git log --merge
+fatal: --merge without MERGE_HEAD?
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git diff
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git checkout
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push
+To https://github.com/ZarAO/R_LAB1_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ZarAO/R_LAB1_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git merge --abort
+fatal: There is no merge to abort (MERGE_HEAD missing).
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git merge ^C
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git merge origin/master
+Already up to date.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push
+To https://github.com/ZarAO/R_LAB1_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ZarAO/R_LAB1_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 734 bytes | 2.00 KiB/s, done.
+From https://github.com/ZarAO/R_LAB1_2
+   c1d92be..262ca0f  master     -> origin/master
+CONFLICT (modify/delete): ProductCatalog/Startup.cs deleted in HEAD and modified in 262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a. Version 262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a of ProductCatalog/Startup.cs left in tree at ProductCatalog/Startup.cs~262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a.
+Automatic merge failed; fix conflicts and then commit the result.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git push
+To https://github.com/ZarAO/R_LAB1_2.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ZarAO/R_LAB1_2.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git pull --rebase
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git push
+To https://github.com/ZarAO/R_LAB1_2.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ZarAO/R_LAB1_2.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git fetch && git checkout master
+error: you need to resolve your current index first
+ProductCatalog/Startup.cs: needs merge
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git marge
+git: 'marge' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git checkout master
+error: you need to resolve your current index first
+ProductCatalog/Startup.cs: needs merge
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git reset --merge
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git checkout master
+Already on 'master'
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git fetch && git checkout master
+Already on 'master'
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push
+To https://github.com/ZarAO/R_LAB1_2.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ZarAO/R_LAB1_2.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git stash save
+No local changes to save
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git pull origin master
+From https://github.com/ZarAO/R_LAB1_2
+ * branch            master     -> FETCH_HEAD
+CONFLICT (modify/delete): ProductCatalog/Startup.cs deleted in HEAD and modified in 262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a. Version 262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a of ProductCatalog/Startup.cs left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git stash pop
+No stash entries found.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git checkout feature
+error: pathspec 'feature' did not match any file(s) known to git
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by us:   ProductCatalog/Startup.cs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vs/
+        ActivityLogger/
+        Interfaces/
+        Lab1.sln
+        Lab1/
+        Middleware/
+        ProductCatalog/ProductCatalog.cs
+        ProductCatalog/ProductCatalog.csproj
+        ProductCatalog/Program.cs
+        ProductCatalog/Properties/
+        ProductCatalog/Startup.cs~262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a
+        ProductCatalog/appsettings.Development.json
+        ProductCatalog/appsettings.json
+        ProductCatalog/bin/
+        ProductCatalog/obj/
+        ShoppingCart/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git add .
+warning: LF will be replaced by CRLF in ActivityLogger/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Lab1/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Lab1/bin/Debug/netcoreapp3.1/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ProductCatalog/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ShoppingCart/appsettings.Development.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.Development.json.
+The file will have its original line endings in your working directory
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        new file:   .vs/Lab1/DesignTimeBuild/.dtbcache.v2
+        new file:   .vs/Lab1/v16/.suo
+        new file:   ActivityLogger/ActivityLogger.cs
+        new file:   ActivityLogger/ActivityLogger.csproj
+        new file:   ActivityLogger/Program.cs
+        new file:   ActivityLogger/Properties/launchSettings.json
+        new file:   ActivityLogger/Scheduler.cs
+        new file:   ActivityLogger/Startup.cs
+        new file:   ActivityLogger/appsettings.Development.json
+        new file:   ActivityLogger/appsettings.json
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.deps.json
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.exe
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.pdb
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.runtimeconfig.dev.json
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/ActivityLogger.runtimeconfig.json
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Interfaces.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Middleware.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Middleware.pdb
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        new file:   ActivityLogger/bin/Debug/netcoreapp3.1/appsettings.json
+        new file:   ActivityLogger/obj/ActivityLogger.csproj.nuget.dgspec.json
+        new file:   ActivityLogger/obj/ActivityLogger.csproj.nuget.g.props
+        new file:   ActivityLogger/obj/ActivityLogger.csproj.nuget.g.targets
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.AssemblyInfo.cs
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.AssemblyInfoInputs.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.MvcApplicationPartsAssemblyInfo.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.RazorTargetAssemblyInfo.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.assets.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.CopyComplete
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.CoreCompileInputs.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csproj.FileListAbsolute.txt
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.csprojAssemblyReference.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.dll
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.genruntimeconfig.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/ActivityLogger.pdb
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/apphost.exe
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/staticwebassets/ActivityLogger.StaticWebAssets.Manifest.cache
+        new file:   ActivityLogger/obj/Debug/netcoreapp3.1/staticwebassets/ActivityLogger.StaticWebAssets.xml
+        new file:   ActivityLogger/obj/project.assets.json
+        new file:   ActivityLogger/obj/project.nuget.cache
+        new file:   Interfaces/IActivityLogger.cs
+        new file:   Interfaces/IProductCatalog.cs
+        new file:   Interfaces/IShoppingCart.cs
+        new file:   Interfaces/Interfaces.csproj
+        new file:   Interfaces/Models/Cart.cs
+        new file:   Interfaces/Models/CartEvent.cs
+        new file:   Interfaces/Models/CartEventTypeEnum.cs
+        new file:   Interfaces/Models/EventBase.cs
+        new file:   Interfaces/Models/LogEvent.cs
+        new file:   Interfaces/Models/Order.cs
+        new file:   Interfaces/Models/Product.cs
+        new file:   Interfaces/bin/Debug/netcoreapp3.1/Interfaces.deps.json
+        new file:   Interfaces/bin/Debug/netcoreapp3.1/Interfaces.dll
+        new file:   Interfaces/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.AssemblyInfo.cs
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.AssemblyInfoInputs.cache
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.assets.cache
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csproj.CoreCompileInputs.cache
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csproj.FileListAbsolute.txt
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.csprojAssemblyReference.cache
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.dll
+        new file:   Interfaces/obj/Debug/netcoreapp3.1/Interfaces.pdb
+        new file:   Interfaces/obj/Interfaces.csproj.nuget.dgspec.json
+        new file:   Interfaces/obj/Interfaces.csproj.nuget.g.props
+        new file:   Interfaces/obj/Interfaces.csproj.nuget.g.targets
+        new file:   Interfaces/obj/project.assets.json
+        new file:   Interfaces/obj/project.nuget.cache
+        new file:   Lab1.sln
+        new file:   Lab1/Lab1.csproj
+        new file:   Lab1/Program.cs
+        new file:   Lab1/Properties/launchSettings.json
+        new file:   Lab1/Startup.cs
+        new file:   Lab1/appsettings.Development.json
+        new file:   Lab1/appsettings.json
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Interfaces.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Lab1.deps.json
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Lab1.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Lab1.exe
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Lab1.pdb
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Lab1.runtimeconfig.dev.json
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Lab1.runtimeconfig.json
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Middleware.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Middleware.pdb
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        new file:   Lab1/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        new file:   Lab1/bin/Debug/netcoreapp3.1/appsettings.json
+        new file:   Lab1/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.AssemblyInfo.cs
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.AssemblyInfoInputs.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.MvcApplicationPartsAssemblyInfo.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.RazorTargetAssemblyInfo.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.assets.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.CopyComplete
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.CoreCompileInputs.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.csproj.FileListAbsolute.txt
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.csprojAssemblyReference.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.dll
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.genruntimeconfig.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/Lab1.pdb
+        new file:   Lab1/obj/Debug/netcoreapp3.1/apphost.exe
+        new file:   Lab1/obj/Debug/netcoreapp3.1/staticwebassets/Lab1.StaticWebAssets.Manifest.cache
+        new file:   Lab1/obj/Debug/netcoreapp3.1/staticwebassets/Lab1.StaticWebAssets.xml
+        new file:   Lab1/obj/Lab1.csproj.nuget.dgspec.json
+        new file:   Lab1/obj/Lab1.csproj.nuget.g.props
+        new file:   Lab1/obj/Lab1.csproj.nuget.g.targets
+        new file:   Lab1/obj/project.assets.json
+        new file:   Lab1/obj/project.nuget.cache
+        new file:   Lab1/wwwroot/index.html
+        new file:   Lab1/wwwroot/index.js
+        new file:   Middleware/Middleware.csproj
+        new file:   Middleware/RequestLoggingExt.cs
+        new file:   Middleware/bin/Debug/netcoreapp3.1/Middleware.deps.json
+        new file:   Middleware/bin/Debug/netcoreapp3.1/Middleware.dll
+        new file:   Middleware/bin/Debug/netcoreapp3.1/Middleware.pdb
+        new file:   Middleware/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.AssemblyInfo.cs
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.AssemblyInfoInputs.cache
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.assets.cache
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.csproj.CoreCompileInputs.cache
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.csproj.FileListAbsolute.txt
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.csprojAssemblyReference.cache
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.dll
+        new file:   Middleware/obj/Debug/netcoreapp3.1/Middleware.pdb
+        new file:   Middleware/obj/Middleware.csproj.nuget.dgspec.json
+        new file:   Middleware/obj/Middleware.csproj.nuget.g.props
+        new file:   Middleware/obj/Middleware.csproj.nuget.g.targets
+        new file:   Middleware/obj/project.assets.json
+        new file:   Middleware/obj/project.nuget.cache
+        new file:   ProductCatalog/ProductCatalog.cs
+        new file:   ProductCatalog/ProductCatalog.csproj
+        new file:   ProductCatalog/Program.cs
+        new file:   ProductCatalog/Properties/launchSettings.json
+        new file:   ProductCatalog/Startup.cs
+        new file:   ProductCatalog/Startup.cs~262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a
+        new file:   ProductCatalog/appsettings.Development.json
+        new file:   ProductCatalog/appsettings.json
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Interfaces.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Middleware.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Middleware.pdb
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.deps.json
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.exe
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.pdb
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.runtimeconfig.dev.json
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/ProductCatalog.runtimeconfig.json
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        new file:   ProductCatalog/bin/Debug/netcoreapp3.1/appsettings.json
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.AssemblyInfo.cs
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.AssemblyInfoInputs.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.MvcApplicationPartsAssemblyInfo.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.RazorTargetAssemblyInfo.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.assets.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.CopyComplete
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.CoreCompileInputs.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csproj.FileListAbsolute.txt
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.csprojAssemblyReference.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.dll
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.genruntimeconfig.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/ProductCatalog.pdb
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/apphost.exe
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/staticwebassets/ProductCatalog.StaticWebAssets.Manifest.cache
+        new file:   ProductCatalog/obj/Debug/netcoreapp3.1/staticwebassets/ProductCatalog.StaticWebAssets.xml
+        new file:   ProductCatalog/obj/ProductCatalog.csproj.nuget.dgspec.json
+        new file:   ProductCatalog/obj/ProductCatalog.csproj.nuget.g.props
+        new file:   ProductCatalog/obj/ProductCatalog.csproj.nuget.g.targets
+        new file:   ProductCatalog/obj/project.assets.json
+        new file:   ProductCatalog/obj/project.nuget.cache
+        new file:   ShoppingCart/Program.cs
+        new file:   ShoppingCart/Properties/launchSettings.json
+        new file:   ShoppingCart/ShoppingCart.cs
+        new file:   ShoppingCart/ShoppingCart.csproj
+        new file:   ShoppingCart/Startup.cs
+        new file:   ShoppingCart/appsettings.Development.json
+        new file:   ShoppingCart/appsettings.json
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Interfaces.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Interfaces.pdb
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Middleware.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Middleware.pdb
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.Abstractions.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/Shed.CoreKit.WebApi.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.deps.json
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.dll
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.exe
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.pdb
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.runtimeconfig.dev.json
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/ShoppingCart.runtimeconfig.json
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.Development.json
+        new file:   ShoppingCart/bin/Debug/netcoreapp3.1/appsettings.json
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.AssemblyInfo.cs
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.AssemblyInfoInputs.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.MvcApplicationPartsAssemblyInfo.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.RazorTargetAssemblyInfo.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.assets.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.CopyComplete
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.CoreCompileInputs.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csproj.FileListAbsolute.txt
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.csprojAssemblyReference.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.dll
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.genruntimeconfig.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/ShoppingCart.pdb
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/apphost.exe
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/staticwebassets/ShoppingCart.StaticWebAssets.Manifest.cache
+        new file:   ShoppingCart/obj/Debug/netcoreapp3.1/staticwebassets/ShoppingCart.StaticWebAssets.xml
+        new file:   ShoppingCart/obj/ShoppingCart.csproj.nuget.dgspec.json
+        new file:   ShoppingCart/obj/ShoppingCart.csproj.nuget.g.props
+        new file:   ShoppingCart/obj/ShoppingCart.csproj.nuget.g.targets
+        new file:   ShoppingCart/obj/project.assets.json
+        new file:   ShoppingCart/obj/project.nuget.cache
+
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git merge
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ commit -a -m '5 commit'
+bash: commit: command not found
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master|MERGING)
+$ git commit -a -m '5 commit'
+[master 2e0970e] 5 commit
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git merge
+Already up to date.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git push
+Enumerating objects: 27, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 2.17 KiB | 740.00 KiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/ZarAO/R_LAB1_2.git
+   262ca0f..2e0970e  master -> master
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ gitlog
+*   2e0970e (HEAD -> master, origin/master) 5 commit
+|\
+| * 262ca0f Update Startup.cs
+* | 158b106 4 commit
+|/
+* c1d92be 3 commit
+* 2130b72 (origin/_2_commit, _2_commit) 2 commit
+* e41ee75 'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git merge _2_commit
+Already up to date.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ gitlog
+*   2e0970e (HEAD -> master, origin/master) 5 commit
+|\
+| * 262ca0f Update Startup.cs
+* | 158b106 4 commit
+|/
+* c1d92be 3 commit
+* 2130b72 (origin/_2_commit, _2_commit) 2 commit
+* e41ee75 'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git merge _2_commit
+Already up to date.
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git commit -a -m '6 commit'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ gitlog
+*   2e0970e (HEAD -> master, origin/master) 5 commit
+|\
+| * 262ca0f Update Startup.cs
+* | 158b106 4 commit
+|/
+* c1d92be 3 commit
+* 2130b72 (origin/_2_commit, _2_commit) 2 commit
+* e41ee75 'Lab1_2'
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git cat-file -p 2e0970e
+tree d711bdd780e8224e0b271dc658989c2aba461347
+parent 158b106f736e626f443cdc3361e9efb6ea902c0a
+parent 262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a
+author ZarAO <antohazarich@gmail.com> 1620615033 +0300
+committer ZarAO <antohazarich@gmail.com> 1620615033 +0300
+
+5 commit
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git cat-file -p commit-tree 2e0970e
+usage: git cat-file (-t [--allow-unknown-type] | -s [--allow-unknown-type] | -e | -p | <type> | --textconv | --filters) [--path=<path>] <object>
+   or: git cat-file (--batch[=<format>] | --batch-check[=<format>]) [--follow-symlinks] [--textconv | --filters]
+
+<type> can be one of: blob, tree, commit, tag
+    -t                    show object type
+    -s                    show object size
+    -e                    exit with zero when there's no error
+    -p                    pretty-print object's content
+    --textconv            for blob objects, run textconv on object's content
+    --filters             for blob objects, run filters on object's content
+    --path <blob>         use a specific path for --textconv/--filters
+    --allow-unknown-type  allow -s and -t to work with broken/corrupt objects
+    --buffer              buffer --batch output
+    --batch[=<format>]    show info and content of objects fed from the standard input
+    --batch-check[=<format>]
+                          show info about objects fed from the standard input
+    --follow-symlinks     follow in-tree symlinks (used with --batch or --batch-check)
+    --batch-all-objects   show all objects with --batch or --batch-check
+    --unordered           do not order --batch-all-objects output
+
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git cat-file -p 2e0970e
+tree d711bdd780e8224e0b271dc658989c2aba461347
+parent 158b106f736e626f443cdc3361e9efb6ea902c0a
+parent 262ca0f6b9c9ead10e25f2eadf9ad9cda06b089a
+author ZarAO <antohazarich@gmail.com> 1620615033 +0300
+committer ZarAO <antohazarich@gmail.com> 1620615033 +0300
+
+5 commit
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ git cat-file -t 2e0970e
+commit
+
+antoh@DESKTOP-7G24S9R MINGW64 /d/University/5k/Lab1 (master)
+$ 
