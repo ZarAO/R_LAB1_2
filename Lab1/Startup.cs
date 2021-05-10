@@ -21,7 +21,6 @@ namespace MicroCommerce.Web
 
             app.Use(async (context, next) =>
             {
-                //  when root calls, the start page will be returned
                 if (string.IsNullOrEmpty(context.Request.Path.Value.Trim('/')))
                 {
                     context.Request.Path = "/index.html";
@@ -30,7 +29,6 @@ namespace MicroCommerce.Web
                 await next();
             });
             app.UseStaticFiles();
-            // редиректы на микросервисы
             app.UseWebApiRedirect("api/products", new WebApiEndpoint<IProductCatalog>(new System.Uri("http://localhost:5001")));
             app.UseWebApiRedirect("api/orders", new WebApiEndpoint<IShoppingCart>(new System.Uri("http://localhost:5002")));
             app.UseWebApiRedirect("api/logs", new WebApiEndpoint<IActivityLogger>(new System.Uri("http://localhost:5003")));
